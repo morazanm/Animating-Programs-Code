@@ -1,0 +1,25 @@
+;; The first three lines of this file were inserted by DrRacket. They record metadata
+;; about the language level of this file in a form that our tools can easily process.
+#reader(lib "htdp-beginner-reader.ss" "lang")((modname bool-table) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #f)))
+(define AND-FF (and #false #false))
+(define AND-FT (and #false #true))
+(define AND-TF (and #true #false))
+(define AND-TT (and #true #true))
+(define OR-FF  (or #false #false))
+(define OR-FT  (or #false #true))
+(define OR-TF  (or #true #false))
+(define OR-TT  (or #true #true))
+(define NOT-F  (not #false))
+(define NOT-T  (not #true))
+
+(check-expect AND-FF #false)
+(check-expect AND-FT #false)
+(check-expect AND-TF #false)
+(check-expect AND-TT #true)
+(check-expect OR-FF  #false)
+(check-expect OR-FT  #true)
+(check-expect OR-TF  #true)
+(check-expect OR-TT #true)
+(check-expect NOT-F #true)
+(check-expect NOT-T #false)
+
