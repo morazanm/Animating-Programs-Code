@@ -57,7 +57,7 @@
 1 0 10 #"text-box%\0"
 1 0 32 #"(lib \"text-snipclass.ss\" \"xml\")\0"
 1 0 1 6 #"wxloc\0"
-          0 0 1706 0 1 #"\0"
+          0 0 1708 0 1 #"\0"
 0 75 1 #"\0"
 0 10 90 -1 90 -1 3 -1 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 255 255 255 1 -1 0 9
 #"Standard\0"
@@ -5169,28 +5169,59 @@
 0 0 -1 -1 2 1 #"\0"
 0 -1 1 #"\0"
 1.0 0 92 -1 90 -1 -1 -1 0 1 0 0 0 0 0.0 0.0 0.0 1.0 1.0 1.0 255 0 0 0 0
-0 -1 -1           0 12660 0 4 3 85
+0 -1 -1 4 1 #"\0"
+0 -1 1 #"\0"
+1.0 0 92 -1 -1 -1 -1 -1 0 0 0 0 0 0 0.0 0.0 0.0 1.0 1.0 1.0 0 0 255 0 0
+0 -1 -1 4 1 #"\0"
+0 -1 1 #"\0"
+1.0 0 90 -1 -1 -1 -1 -1 0 0 0 0 0 1 0.0 0.0 0.0 0.0 0.0 0.0 0 0 255 0 0
+0 -1 -1           0 12792 0 18 3 85
 (4
  #";; The first three lines of this file were inserted by DrRacket. The"
  #"y record metadata"
-) 0 0 4 29 1 #"\n"
-0 0 4 3 85
+) 0 0 27 29 1 #"\n"
+0 0 18 3 85
 (5
  #";; about the language level of this file in a form that our tools ca"
  #"n easily process."
-) 0 0 4 29 1 #"\n"
-0 0 4 3 94
-(6
- #"#reader(lib \"htdp-intermediate-lambda-reader.ss\" \"lang\")((modnam"
- #"e aliens-attack-v4-buggy) (rea"
-) 0 0 4 3 265
-(7
- #"d-case-sensitive #t) (teachpacks"
- #" ((lib \"image.rkt\" \"teachpack\" \"2htdp\") (lib \"universe.rkt\" "
- #"\"teachpack\" \"2htdp\"))) (htdp-settings #(#t constructor repeating"
- #"-decimal #f #t none #f ((lib \"image.rkt\" \"teachpack\" \"2htdp\") "
- #"(lib \"universe.rkt\" \"teachpack\" \"2htdp\")) #f)))"
-) 0 0 4 29 1 #"\n"
+) 0 0 27 29 1 #"\n"
+0 0 29 3 7 #"#reader"
+0 0 27 3 1 #"("
+0 0 14 3 3 #"lib"
+0 0 27 3 1 #" "
+0 0 20 3 25 #"\"htdp-advanced-reader.ss\""
+0 0 27 3 1 #" "
+0 0 20 3 6 #"\"lang\""
+0 0 27 3 3 #")(("
+0 0 14 3 7 #"modname"
+0 0 27 3 1 #" "
+0 0 14 3 22 #"aliens-attack-v4-buggy"
+0 0 27 3 3 #") ("
+0 0 14 3 19 #"read-case-sensitive"
+0 0 27 3 1 #" "
+0 0 23 3 2 #"#t"
+0 0 27 3 3 #") ("
+0 0 14 3 10 #"teachpacks"
+0 0 27 3 6 #" ()) ("
+0 0 14 3 13 #"htdp-settings"
+0 0 27 3 3 #" #("
+0 0 23 3 2 #"#t"
+0 0 27 3 1 #" "
+0 0 14 3 11 #"constructor"
+0 0 27 3 1 #" "
+0 0 14 3 17 #"repeating-decimal"
+0 0 27 3 1 #" "
+0 0 23 3 2 #"#t"
+0 0 27 3 1 #" "
+0 0 23 3 2 #"#t"
+0 0 27 3 1 #" "
+0 0 14 3 4 #"none"
+0 0 27 3 1 #" "
+0 0 23 3 2 #"#f"
+0 0 27 3 4 #" () "
+0 0 23 3 2 #"#f"
+0 0 27 3 3 #")))"
+0 0 27 29 1 #"\n"
 0 0 27 3 1 #"("
 0 0 16 3 7 #"require"
 0 0 27 3 1 #" "
@@ -5523,7 +5554,7 @@
 0 0 18 29 1 #"\n"
 0 0 18 3 9 #"        A"
 0 0 18 3 82
-(8
+(6
  #"n image-x > MIN-IMG-X, image-x>min, is an integer in [(add1 MIN-IMG-"
  #"X)..MAX-IMG-X]"
 ) 0 0 18 29 1 #"\n"
@@ -5572,7 +5603,7 @@
 0 0 18 29 1 #"\n"
 0 0 18 3 9 #"        A"
 0 0 18 3 82
-(9
+(7
  #"n image-x < MAX-IMG-X, image-x<max, is an integer in [MIN-IMG-X..(su"
  #"b1 MAX-IMG-X)]"
 ) 0 0 18 29 1 #"\n"
@@ -5766,7 +5797,7 @@
 0 0 18 29 1 #"\n"
 0 0 18 29 1 #"\n"
 0 0 18 3 74
-(10
+(8
  #"    A scene is a (MAX-CHARS-HORIZONTAL * IMAGE-WIDTH) x (MAX-CHARS-V"
  #"ERTICA"
 ) 0 0 18 3 1 #"L"
@@ -6026,7 +6057,7 @@
 0 0 18 3 14 #"           ..."
 0 0 18 29 1 #"\n"
 0 0 18 3 83
-(11
+(9
  #"           ...(f-on-image-x (posn-x a-shot))...(f-on-image-y (posn-y"
  #" a-shot))...)))"
 ) 0 0 18 29 1 #"\n"
@@ -6085,7 +6116,7 @@
 0 0 18 3 14 #"           ..."
 0 0 18 29 1 #"\n"
 0 0 18 3 72
-(12
+(10
  #"           ...(f-on-alien (first a-loa))...(f-on-loa (rest a-loa)).."
  #".)))"
 ) 0 0 18 29 1 #"\n"
@@ -6143,7 +6174,7 @@
 0 0 18 3 14 #"           ..."
 0 0 18 29 1 #"\n"
 0 0 18 3 71
-(13
+(11
  #"           ...(f-on-shot (first a-los))...(f-on-los (rest a-los))..."
  #")))"
 ) 0 0 18 29 1 #"\n"
@@ -6540,9 +6571,7 @@
 0 0 23 3 1 #"'"
 0 0 27 3 3 #"())"
 0 0 27 29 1 #"\n"
-0 0 18 3 4 #";; ("
-0 0 18 3 6 #"define"
-0 0 18 3 44 #" INIT-LOA (create-alien-army 3)) moved below"
+0 0 18 3 54 #";; (define INIT-LOA (create-alien-army 3)) moved below"
 0 0 27 29 1 #"\n"
 0 0 27 3 1 #"("
 0 0 16 3 6 #"define"
@@ -6668,6 +6697,14 @@
 0 0 27 3 1 #"("
 0 0 16 3 6 #"define"
 0 0 27 3 1 #" "
+0 0 14 3 8 #"INIT-LOS"
+0 0 27 3 1 #" "
+0 0 23 3 1 #"'"
+0 0 27 3 3 #"())"
+0 0 27 29 1 #"\n"
+0 0 27 3 1 #"("
+0 0 16 3 6 #"define"
+0 0 27 3 1 #" "
 0 0 14 3 5 #"A-LOS"
 0 0 27 3 2 #" ("
 0 0 14 3 4 #"cons"
@@ -6740,15 +6777,11 @@
 0 0 27 29 1 #"\n"
 0 0 27 29 1 #"\n"
 0 0 27 29 1 #"\n"
-0 0 18 3 2 #";;"
-0 0 18 3 1 #"("
-0 0 18 3 6 #"define"
-0 0 18 3 1 #" "
-0 0 18 3 10 #"INIT-WORLD"
-0 0 18 3 2 #"  "
-0 0 18 3 64
-#"(make-world INIT-ROCKET  INIT-LOA  INIT-DIR  E-LOS)) moved below"
-0 0 27 29 1 #"\n"
+0 0 18 3 86
+(12
+ #";;(define INIT-WORLD  (make-world INIT-ROCKET  INIT-LOA  INIT-DIR  E"
+ #"-LOS)) moved below"
+) 0 0 27 29 1 #"\n"
 0 0 27 3 1 #"("
 0 0 16 3 6 #"define"
 0 0 27 3 1 #" "
@@ -6798,6 +6831,114 @@
 0 0 23 3 1 #"3"
 0 0 27 3 4 #"))))"
 0 0 27 29 1 #"\n"
+0 0 27 3 1 #"("
+0 0 16 3 6 #"define"
+0 0 27 3 1 #" "
+0 0 14 3 6 #"WORLD4"
+0 0 27 3 2 #" ("
+0 0 14 3 10 #"make-world"
+0 0 27 3 1 #" "
+0 0 23 3 1 #"4"
+0 0 27 3 1 #" "
+0 0 23 3 1 #"'"
+0 0 27 3 3 #"() "
+0 0 23 3 1 #"'"
+0 0 14 3 4 #"left"
+0 0 27 3 1 #" "
+0 0 23 3 1 #"'"
+0 0 27 3 4 #"()))"
+0 0 27 29 1 #"\n"
+0 0 27 29 1 #"\n"
+0 9         535 23           0 0           0 88 0 18 3 18
+#";; world --> world"
+0 0 27 29 1 #"\n"
+0 0 27 3 4 #"    "
+0 0 18 3 49 #";; Purpose: Create a new world after a clock tick"
+0 0 27 29 1 #"\n"
+0 0 27 3 5 #"    ("
+0 0 16 3 6 #"define"
+0 0 27 3 2 #" ("
+0 0 14 3 12 #"process-tick"
+0 0 27 3 1 #" "
+0 0 14 3 7 #"a-world"
+0 0 27 3 1 #")"
+0 0 27 29 1 #"\n"
+0 0 27 3 7 #"      ("
+0 0 14 3 10 #"make-world"
+0 0 27 3 2 #" ("
+0 0 14 3 12 #"world-rocket"
+0 0 27 3 1 #" "
+0 0 14 3 7 #"a-world"
+0 0 27 3 1 #")"
+0 0 27 29 1 #"\n"
+0 0 27 3 19 #"                  ("
+0 0 14 3 17 #"remove-hit-aliens"
+0 0 27 3 2 #" ("
+0 0 14 3 8 #"move-loa"
+0 0 27 3 2 #" ("
+0 0 14 3 12 #"world-aliens"
+0 0 27 3 1 #" "
+0 0 14 3 7 #"a-world"
+0 0 27 3 3 #") ("
+0 0 14 3 9 #"world-dir"
+0 0 27 3 1 #" "
+0 0 14 3 7 #"a-world"
+0 0 27 3 2 #"))"
+0 0 27 29 1 #"\n"
+0 0 27 3 38 #"                                     ("
+0 0 14 3 8 #"move-los"
+0 0 27 3 2 #" ("
+0 0 14 3 11 #"world-shots"
+0 0 27 3 1 #" "
+0 0 14 3 7 #"a-world"
+0 0 27 3 3 #")))"
+0 0 27 29 1 #"\n"
+0 0 27 3 19 #"                  ("
+0 0 14 3 18 #"new-dir-after-tick"
+0 0 27 3 2 #" ("
+0 0 14 3 8 #"move-loa"
+0 0 27 3 2 #" ("
+0 0 14 3 12 #"world-aliens"
+0 0 27 3 1 #" "
+0 0 14 3 7 #"a-world"
+0 0 27 3 1 #")"
+0 0 27 29 1 #"\n"
+0 0 27 3 49 #"                                                ("
+0 0 14 3 9 #"world-dir"
+0 0 27 3 1 #" "
+0 0 14 3 7 #"a-world"
+0 0 27 3 2 #"))"
+0 0 27 29 1 #"\n"
+0 0 27 3 39 #"                                      ("
+0 0 14 3 9 #"world-dir"
+0 0 27 3 1 #" "
+0 0 14 3 7 #"a-world"
+0 0 27 3 2 #"))"
+0 0 27 29 1 #"\n"
+0 0 27 3 19 #"                  ("
+0 0 14 3 12 #"remove-shots"
+0 0 27 3 2 #" ("
+0 0 14 3 8 #"move-los"
+0 0 27 3 2 #" ("
+0 0 14 3 11 #"world-shots"
+0 0 27 3 1 #" "
+0 0 14 3 7 #"a-world"
+0 0 27 3 2 #"))"
+0 0 27 29 1 #"\n"
+0 0 27 3 33 #"                                ("
+0 0 14 3 8 #"move-loa"
+0 0 27 3 2 #" ("
+0 0 14 3 12 #"world-aliens"
+0 0 27 3 1 #" "
+0 0 14 3 7 #"a-world"
+0 0 27 3 1 #")"
+0 0 27 29 1 #"\n"
+0 0 27 3 43 #"                                          ("
+0 0 14 3 9 #"world-dir"
+0 0 27 3 1 #" "
+0 0 14 3 7 #"a-world"
+0 0 27 3 5 #")))))"
+0           0 0 0 27 29 1 #"\n"
 0 0 27 29 1 #"\n"
 0 0 18 3 1 #"#"
 0 0 18 3 1 #"|"
@@ -6872,12 +7013,12 @@
 0 0 18 29 1 #"\n"
 0 0 18 29 1 #"\n"
 0 0 18 3 72
-(14
+(13
  #"Summary: On the left side: down to left ignoring alien that reached "
  #"left"
 ) 0 0 18 29 1 #"\n"
 0 0 18 3 77
-(15
+(14
  #"         On the right side: down to left not ignoring alien that rea"
  #"ched left"
 ) 0 0 18 29 1 #"\n"
@@ -6903,15 +7044,15 @@
 0 0 27 3 27 #"                          ("
 0 0 14 3 9 #"make-posn"
 0 0 27 3 1 #" "
-0 0 23 3 1 #"0"
-0 0 27 3 1 #" "
-0 0 23 3 1 #"6"
-0 0 27 3 1 #")"
-0 0 27 29 1 #"\n"
-0 0 27 3 27 #"                          ("
-0 0 14 3 9 #"make-posn"
-0 0 27 3 1 #" "
 0 0 23 3 1 #"4"
+0 0 27 3 2 #"  "
+0 0 23 3 1 #"6"
+0 0 27 3 1 #")"
+0 0 27 29 1 #"\n"
+0 0 27 3 27 #"                          ("
+0 0 14 3 9 #"make-posn"
+0 0 27 3 1 #" "
+0 0 23 3 2 #"10"
 0 0 27 3 1 #" "
 0 0 23 3 1 #"6"
 0 0 27 3 1 #")"
@@ -6919,7 +7060,7 @@
 0 0 27 3 27 #"                          ("
 0 0 14 3 9 #"make-posn"
 0 0 27 3 1 #" "
-0 0 23 3 1 #"6"
+0 0 23 3 2 #"11"
 0 0 27 3 1 #" "
 0 0 23 3 1 #"6"
 0 0 27 3 1 #")"
@@ -6927,7 +7068,7 @@
 0 0 27 3 27 #"                          ("
 0 0 14 3 9 #"make-posn"
 0 0 27 3 1 #" "
-0 0 23 3 1 #"7"
+0 0 23 3 2 #"12"
 0 0 27 3 1 #" "
 0 0 23 3 1 #"6"
 0 0 27 3 1 #")"
@@ -6935,7 +7076,7 @@
 0 0 27 3 27 #"                          ("
 0 0 14 3 9 #"make-posn"
 0 0 27 3 1 #" "
-0 0 23 3 1 #"5"
+0 0 23 3 2 #"10"
 0 0 27 3 1 #" "
 0 0 23 3 1 #"7"
 0 0 27 3 1 #")"
@@ -6943,7 +7084,7 @@
 0 0 27 3 27 #"                          ("
 0 0 14 3 9 #"make-posn"
 0 0 27 3 1 #" "
-0 0 23 3 1 #"6"
+0 0 23 3 2 #"11"
 0 0 27 3 1 #" "
 0 0 23 3 1 #"7"
 0 0 27 3 1 #")"
@@ -6951,7 +7092,7 @@
 0 0 27 3 27 #"                          ("
 0 0 14 3 9 #"make-posn"
 0 0 27 3 1 #" "
-0 0 23 3 1 #"7"
+0 0 23 3 2 #"13"
 0 0 27 3 1 #" "
 0 0 23 3 1 #"7"
 0 0 27 3 1 #")"
@@ -6959,14 +7100,14 @@
 0 0 27 3 27 #"                          ("
 0 0 14 3 9 #"make-posn"
 0 0 27 3 1 #" "
-0 0 23 3 1 #"7"
+0 0 23 3 2 #"15"
 0 0 27 3 1 #" "
 0 0 23 3 1 #"8"
 0 0 27 3 2 #"))"
 0 0 27 29 1 #"\n"
 0 0 27 3 24 #"                        "
 0 0 23 3 1 #"'"
-0 0 14 3 4 #"down"
+0 0 14 3 4 #"left"
 0 0 27 29 1 #"\n"
 0 0 27 3 25 #"                        ("
 0 0 14 3 4 #"list"
@@ -6975,7 +7116,7 @@
 0 0 27 3 1 #" "
 0 0 23 3 1 #"0"
 0 0 27 3 1 #" "
-0 0 23 3 1 #"8"
+0 0 23 3 2 #"12"
 0 0 27 3 4 #"))))"
 0 0 27 29 1 #"\n"
 0 0 27 29 1 #"\n"
@@ -7159,7 +7300,7 @@
 0 0 18 3 37 #";; image-y [image-x..image-x] --> loa"
 0 0 27 29 1 #"\n"
 0 0 18 3 80
-(16
+(15
  #";; Purpose: Create an loa with the given image-y with the given imag"
  #"e-x interval"
 ) 0 0 27 29 1 #"\n"
@@ -7605,7 +7746,7 @@
 0 0 27 3 2 #"  "
 0 0 14 3 8 #"INIT-DIR"
 0 0 27 3 2 #"  "
-0 0 14 3 5 #"E-LOS"
+0 0 14 3 8 #"INIT-LOS"
 0 0 27 3 2 #"))"
 0 0 27 29 1 #"\n"
 0 0 27 29 1 #"\n"
@@ -8038,7 +8179,7 @@
 0 0 14 3 6 #"purple"
 0 0 27 3 6 #")     "
 0 6           4 23 261
-(17
+(16
  #"(#(struct:overlay #(struct:translate 0 0 #(struct:translate 8.5 14.0"
  #" #(struct:text \"X\" 0 1 \"purple\" 25 #f swiss normal normal #f))) "
  #"#(struct:translate 1.0 6.5 #(struct:translate 15/2 15/2 #(struct:ell"
@@ -8054,7 +8195,7 @@
 0 0 14 3 10 #"lightbrown"
 0 0 27 3 2 #") "
 0 6           4 23 269
-(18
+(17
  #"(#(struct:overlay #(struct:translate 0 0 #(struct:translate 8.5 14.0"
  #" #(struct:text \"X\" 0 1 \"lightbrown\" 25 #f swiss normal normal #f"
  #"))) #(struct:translate 1.0 6.5 #(struct:translate 15/2 15/2 #(struct"
@@ -8252,7 +8393,7 @@
 0 0 14 3 3 #"red"
 0 0 27 3 2 #") "
 0 6           4 23 1152
-(19
+(18
  #"(#(struct:translate -1.0656865448419843 -1.0656865448419879 #(struct"
  #":polygon (#(struct:pulled-point 0 0 15.944543648263005 12.0554563517"
  #"36995 0 0) #(struct:pulled-point 0 0 19.357568053111258 1.0656865448"
@@ -8281,7 +8422,7 @@
 0 0 14 3 5 #"brown"
 0 0 27 3 2 #") "
 0 6           4 23 1154
-(20
+(19
  #"(#(struct:translate -1.0656865448419843 -1.0656865448419879 #(struct"
  #":polygon (#(struct:pulled-point 0 0 15.944543648263005 12.0554563517"
  #"36995 0 0) #(struct:pulled-point 0 0 19.357568053111258 1.0656865448"
@@ -8445,7 +8586,7 @@
 0 0 14 3 5 #"olive"
 0 0 27 3 2 #") "
 0 6           4 23 90
-(21
+(20
  #"(#(struct:translate 10 10 #(struct:ellipse 20 20 0 255 \"olive\")) #"
  #"(struct:bb 20 20 20) #f)"
 ) 0 0 27 3 2 #" )"
@@ -8459,7 +8600,7 @@
 0 0 14 3 9 #"lightgray"
 0 0 27 3 2 #") "
 0 6           4 23 94
-(22
+(21
  #"(#(struct:translate 10 10 #(struct:ellipse 20 20 0 255 \"lightgray\""
  #")) #(struct:bb 20 20 20) #f)"
 ) 0 0 27 3 2 #" )"
@@ -8607,7 +8748,7 @@
 0 0 14 3 8 #"darkblue"
 0 0 27 3 2 #") "
 0 6           4 23 91
-(23
+(22
  #"(#(struct:translate 3/2 5 #(struct:ellipse 3 10 0 255 \"darkblue\"))"
  #" #(struct:bb 3 10 10) #f)"
 ) 0 0 27 3 2 #" )"
@@ -8621,7 +8762,7 @@
 0 0 14 3 4 #"gray"
 0 0 27 3 2 #") "
 0 6           4 23 87
-(24
+(23
  #"(#(struct:translate 3/2 5 #(struct:ellipse 3 10 0 255 \"gray\")) #(s"
  #"truct:bb 3 10 10) #f)"
 ) 0 0 27 3 2 #" )"
@@ -8744,7 +8885,7 @@
 0 0 14 3 7 #"darkred"
 0 0 27 3 2 #") "
 0 6           4 23 300
-(25
+(24
  #"(#(struct:translate 10.0 8.660254037844387 #(struct:polygon (#(struc"
  #"t:pulled-point 0 0 0.0 -8.660254037844387 0 0) #(struct:pulled-point"
  #" 0 0 -10.0 -8.660254037844387 0 0) #(struct:pulled-point 0 0 -5.0000"
@@ -8761,7 +8902,7 @@
 0 0 14 3 4 #"gold"
 0 0 27 3 2 #") "
 0 6           4 23 297
-(26
+(25
  #"(#(struct:translate 10.0 8.660254037844387 #(struct:polygon (#(struc"
  #"t:pulled-point 0 0 0.0 -8.660254037844387 0 0) #(struct:pulled-point"
  #" 0 0 -10.0 -8.660254037844387 0 0) #(struct:pulled-point 0 0 -5.0000"
@@ -8852,7 +8993,7 @@
 0 0 14 3 7 #"darkred"
 0 0 27 3 3 #")) "
 0 6           4 23 613
-(27
+(26
  #"(#(struct:overlay #(struct:translate 0 0 #(struct:translate 10.0 8.6"
  #"60254037844387 #(struct:polygon (#(struct:pulled-point 0 0 0.0 -8.66"
  #"0254037844387 0 0) #(struct:pulled-point 0 0 -10.0 -8.66025403784438"
@@ -8876,7 +9017,7 @@
 0 0 14 3 4 #"gold"
 0 0 27 3 3 #")) "
 0 6           4 23 607
-(28
+(27
  #"(#(struct:overlay #(struct:translate 0 0 #(struct:translate 10.0 8.6"
  #"60254037844387 #(struct:polygon (#(struct:pulled-point 0 0 0.0 -8.66"
  #"0254037844387 0 0) #(struct:pulled-point 0 0 -10.0 -8.66025403784438"
@@ -9080,7 +9221,7 @@
 0 0 27 29 1 #"\n"
 0 0 27 3 14 #"              "
 0 6           4 23 1036
-(29
+(28
  #"(#(struct:crop (#(struct:point 0 0) #(struct:point 20.0 0) #(struct:"
  #"point 20.0 28.66025403784439) #(struct:point 0 28.66025403784439)) #"
  #"(struct:translate 0 0 #(struct:overlay #(struct:translate 17/2 0 #(s"
@@ -9129,7 +9270,7 @@
 0 0 27 29 1 #"\n"
 0 0 27 3 14 #"              "
 0 6           4 23 1041
-(30
+(29
  #"(#(struct:crop (#(struct:point 0 0) #(struct:point 20.0 0) #(struct:"
  #"point 20.0 28.66025403784439) #(struct:point 0 28.66025403784439)) #"
  #"(struct:translate 0 0 #(struct:overlay #(struct:translate 17/2 0 #(s"
@@ -9319,7 +9460,7 @@
 0 0 27 29 1 #"\n"
 0 0 27 3 14 #"              "
 0 6           4 23 235
-(31
+(30
  #"(#(struct:translate 0 0 #(struct:polygon (#(struct:pulled-point 0 0 "
  #"0 0 0 0) #(struct:pulled-point 0 0 20 0 0 0) #(struct:pulled-point 0"
  #" 0 20 29/4 0 0) #(struct:pulled-p"
@@ -9362,7 +9503,7 @@
 0 0 27 29 1 #"\n"
 0 0 27 3 14 #"              "
 0 6           4 23 240
-(32
+(31
  #"(#(struct:translate 0 0 #(struct:polygon (#(struct:pulled-point 0 0 "
  #"0 0 0 0) #(struct:pulled-point 0 0 20 0 0 0) #(struct:pulled-point 0"
  #" 0 20 29/4 0 0) #(struct:pulled-point 0 0 0 29/4 0 0)) 255 \"lightor"
@@ -9597,7 +9738,7 @@
 0 0 27 29 1 #"\n"
 0 0 27 3 14 #"              "
 0 6           4 23 1469
-(33
+(32
  #"(#(struct:crop (#(struct:point 0 0) #(struct:point 20.0 0) #(struct:"
  #"point 20.0 28.66025403784439) #(struct:point 0 28.66025403784439)) #"
  #"(struct:translate 0 0 #(struct:overlay #(struct:translate 0 667/40 #"
@@ -9688,7 +9829,7 @@
 0 0 27 29 1 #"\n"
 0 0 27 3 14 #"              "
 0 6           4 23 1475
-(34
+(33
  #"(#(struct:crop (#(struct:point 0 0) #(struct:point 20.0 0) #(struct:"
  #"point 20.0 28.66025403784439) #(struct:point 0 28.66025403784439)) #"
  #"(struct:translate 0 0 #(struct:overlay #(struct:translate 0 667/40 #"
@@ -9970,7 +10111,7 @@
 0 0 18 3 40 #";; image image-x image-y image --> image"
 0 0 27 29 1 #"\n"
 0 0 18 3 97
-(35
+(34
  #";; Purpose: Place the first given image in the seocond given image a"
  #"t the given image coordinates"
 ) 0 0 27 29 1 #"\n"
@@ -10153,7 +10294,7 @@
 0 0 27 29 1 #"\n"
 0 0 27 3 14 #"              "
 0 6           4 23 1068
-(36
+(35
  #"(#(struct:crop (#(struct:point 0 0) #(struct:point 600 0) #(struct:p"
  #"oint 600 450) #(struct:point 0 450)) #(struct:translate 0 0 #(struct"
  #":overlay #(struct:translate 250 250 #(struct:translate 0 0 #(struct:"
@@ -10203,7 +10344,7 @@
 0 0 27 29 1 #"\n"
 0 0 27 3 14 #"              "
 0 6           4 23 936
-(37
+(36
  #"(#(struct:crop (#(struct:point 0 0) #(struct:point 600 0) #(struct:p"
  #"oint 600 450) #(struct:point 0 450)) #(struct:translate 0 0 #(struct"
  #":overlay #(struct:translate 335 360 #(struct:translate 10 15 #(struc"
@@ -10353,7 +10494,7 @@
 0 0 27 29 1 #"\n"
 0 0 27 3 14 #"              "
 0 6           4 23 1047
-(38
+(37
  #"(#(struct:crop (#(struct:point 0 0) #(struct:point 600 0) #(struct:p"
  #"oint 600 450) #(struct:point 0 450)) #(struct:translate 0 0 #(struct"
  #":overlay #(struct:translate 96.5 421.0 #(struct:overlay #(struct:tra"
@@ -10479,7 +10620,7 @@
 0 0 27 29 1 #"\n"
 0 0 27 3 14 #"              "
 0 6           4 23 1905
-(39
+(38
  #"(#(struct:crop (#(struct:point 0 0) #(struct:point 600 0) #(struct:p"
  #"oint 600 450) #(struct:point 0 450)) #(struct:translate 0 0 #(struct"
  #":overlay #(struct:translate 5.0 420.6698729810778 #(struct:crop (#(s"
@@ -10526,7 +10667,7 @@
 0 0 27 29 1 #"\n"
 0 0 27 3 14 #"              "
 0 6           4 23 1907
-(40
+(39
  #"(#(struct:crop (#(struct:point 0 0) #(struct:point 600 0) #(struct:p"
  #"oint 600 450) #(struct:point 0 450)) #(struct:translate 0 0 #(struct"
  #":overlay #(struct:translate 575.0 420.6698729810778 #(struct:crop (#"
@@ -10729,7 +10870,7 @@
 0 0 27 29 1 #"\n"
 0 0 27 3 19 #"                   "
 0 6           4 23 1991
-(41
+(40
  #"(#(struct:crop (#(struct:point 0 0) #(struct:point 600 0) #(struct:p"
  #"oint 600 450) #(struct:point 0 450)) #(struct:translate 0 0 #(struct"
  #":overlay #(struct:translate 302.065686544842 212.06568654484198 #(st"
@@ -10906,7 +11047,7 @@
 0 0 27 29 1 #"\n"
 0 0 27 3 19 #"                   "
 0 6           4 23 1428
-(42
+(41
  #"(#(struct:crop (#(struct:point 0 0) #(struct:point 600 0) #(struct:p"
  #"oint 600 450) #(struct:point 0 450)) #(struct:translate 0 0 #(struct"
  #":overlay #(struct:translate 96.5 121.0 #(struct:overlay #(struct:tra"
@@ -11045,15 +11186,14 @@
 0 0 27 3 5 #"     "
 0 0 18 3 41 #";; Tests using sample values for draw-los"
 0 0 27 29 1 #"\n"
-0 0 27 3 5 #"     "
-0 9         205 23           0 0           0 33 0 27 3 1 #"("
+0 0 27 3 6 #"     ("
 0 0 14 3 12 #"check-expect"
 0 0 27 3 2 #" ("
 0 0 14 3 8 #"draw-los"
 0 0 27 3 2 #" ("
 0 0 14 3 4 #"cons"
 0 0 27 3 2 #" ("
-0 0 14 3 8 #"makeposn"
+0 0 14 3 9 #"make-posn"
 0 0 27 3 1 #" "
 0 0 23 3 2 #"14"
 0 0 27 3 1 #" "
@@ -11077,9 +11217,43 @@
 0 0 27 3 1 #")"
 0 0 27 29 1 #"\n"
 0 0 27 3 19 #"                   "
-0 0 14 3 3 #"..."
-0 0 27 3 1 #")"
-0           0 0 0 27 29 1 #"\n"
+0 6           4 23 2225
+(42
+ #"(#(struct:crop (#(struct:point 0 0) #(struct:point 600 0) #(struct:p"
+ #"oint 600 450) #(struct:point 0 450)) #(struct:translate 0 0 #(struct"
+ #":overlay #(struct:translate 422.065686544842 242.06568654484198 #0=#"
+ #"(struct:polygon (#(struct:pulled-point 0 0 14.878857103421021 10.989"
+ #"769806895007 0 0) #(struct:pulled-point 0 0 18.291881508269274 0.0 0"
+ #" 0) #(struct:pulled-point 0 0 12.934313455158016 10.184313455158012 "
+ #"0 0) #(struct:pulled-point 0 0 7.57674540204675 0.0 0 0) #(struct:pu"
+ #"lled-point 0 0 10.98976980689501 10.989769806895007 0 0) #(struct:pu"
+ #"lled-point 0 0 0.0 7.5767454020467575 0 0) #(struct:pulled-point 0 0"
+ #" 10.184313455158016 12.934313455158012 0 0) #(struct:pulled-point 0 "
+ #"0 1.7763568394002505e-015 18.29188150826927 0 0) #(struct:pulled-poi"
+ #"nt 0 0 10.98976980689501 14.878857103421018 0 0) #(struct:pulled-poi"
+ #"nt 0 0 7.576745402046759 25.868626910316024 0 0) #(struct:pulled-poi"
+ #"nt 0 0 12.934313455158016 15.684313455158012 0 0) #(struct:pulled-po"
+ #"int 0 0 18.291881508269274 25.868626910316024 0 0) #(struct:pulled-p"
+ #"oint 0 0 14.878857103421021 14.878857103421018 0 0) #(struct:pulled-"
+ #"point 0 0 25.868626910316028 18.29188150826927 0 0) #(struct:pulled-"
+ #"point 0 0 15.684313455158016 12.934313455158012 0 0) #(struct:pulled"
+ #"-point 0 0 25.868626910316028 7.576745402046754 0 0)) 255 \"orange\""
+ #")) #(struct:translate 0 0 #(struct:crop (#(struct:point 0 0) #(struc"
+ #"t:point 600 0) #(struct:point 600 450) #(struct:point 0 450)) #(stru"
+ #"ct:translate 0 0 #(struct:overlay #(struct:translate 92.065686544841"
+ #"98 62.06568654484199 #0#) #(struct:translate 0 0 #(struct:crop (#(st"
+ #"ruct:point 0 0) #(struct:point 600 0) #(struct:point 600 450) #(stru"
+ #"ct:point 0 450)) #(struct:translate 0 0 #(struct:overlay #(struct:tr"
+ #"anslate 0 0 #(struct:translate 0 0 #(struct:polygon (#(struct:pulled"
+ #"-point 0 0 0 0 0 0) #(struct:pulled-point 0 0 600 0 0 0) #(struct:pu"
+ #"lled-point 0 0 600 450 0 0) #(struct:pulled-point 0 0 0 450 0 0)) ou"
+ #"tline #(struct:pen \"black\" 2 solid round round)))) #(struct:transl"
+ #"ate 0 0 #(struct:translate 0 0 #(struct:polygon (#(struct:pulled-poi"
+ #"nt 0 0 0 0 0 0) #(struct:pulled-point 0 0 600 0 0 0) #(struct:pulled"
+ #"-point 0 0 600 450 0 0) #(struct:pulled-point 0 0 0 450 0 0)) 255 \""
+ #"darkgray\")))))))))))))) #(struct:bb 600 450 450.0) #f)"
+) 0 0 27 3 2 #" )"
+0 0 27 29 1 #"\n"
 0 0 27 29 1 #"\n"
 0 0 27 29 1 #"\n"
 0 0 27 29 1 #"\n"
@@ -14314,6 +14488,10 @@
 0 0 27 3 4 #"    "
 0 0 18 3 43 #";;          when previous direction is down"
 0 0 27 29 1 #"\n"
+0 0 27 3 4 #"    "
+0 0 18 3 63
+#";; ASSUMPTION: The given loa does not have aliens at both edges"
+0 0 27 29 1 #"\n"
 0 0 27 3 5 #"    ("
 0 0 16 3 6 #"define"
 0 0 27 3 2 #" ("
@@ -14510,8 +14688,7 @@
 0 0 27 3 1 #" "
 0 0 14 3 8 #"INIT-LOA"
 0 0 27 3 2 #") "
-0 0 23 3 1 #"'"
-0 0 14 3 4 #"left"
+0 0 14 3 12 #"NOT-AT-LEDGE"
 0 0 27 3 1 #")"
 0 0 27 29 1 #"\n"
 0 0 27 29 1 #"\n"
@@ -16700,6 +16877,8 @@
 0 0 27 3 19 #"                  ("
 0 0 14 3 18 #"new-dir-after-tick"
 0 0 27 3 2 #" ("
+0 0 14 3 17 #"remove-hit-aliens"
+0 0 27 3 2 #" ("
 0 0 14 3 8 #"move-loa"
 0 0 27 3 2 #" ("
 0 0 14 3 12 #"world-aliens"
@@ -16707,11 +16886,21 @@
 0 0 14 3 7 #"a-world"
 0 0 27 3 1 #")"
 0 0 27 29 1 #"\n"
-0 0 27 3 49 #"                                                ("
+0 0 27 3 68
+#"                                                                   ("
 0 0 14 3 9 #"world-dir"
 0 0 27 3 1 #" "
 0 0 14 3 7 #"a-world"
 0 0 27 3 2 #"))"
+0 0 27 29 1 #"\n"
+0 0 27 3 58
+#"                                                         ("
+0 0 14 3 8 #"move-los"
+0 0 27 3 2 #" ("
+0 0 14 3 11 #"world-shots"
+0 0 27 3 1 #" "
+0 0 14 3 7 #"a-world"
+0 0 27 3 3 #")))"
 0 0 27 29 1 #"\n"
 0 0 27 3 39 #"                                      ("
 0 0 14 3 9 #"world-dir"
@@ -16790,6 +16979,8 @@
 0 0 27 3 43 #"                                          ("
 0 0 14 3 18 #"new-dir-after-tick"
 0 0 27 3 2 #" ("
+0 0 14 3 17 #"remove-hit-aliens"
+0 0 27 3 2 #" ("
 0 0 14 3 8 #"move-loa"
 0 0 27 3 2 #" ("
 0 0 14 3 12 #"world-aliens"
@@ -16797,14 +16988,25 @@
 0 0 14 3 10 #"INIT-WORLD"
 0 0 27 3 1 #")"
 0 0 27 29 1 #"\n"
-0 0 27 3 73
+0 0 27 3 92
 (49
  #"                                                                    "
- #"    ("
+ #"                       ("
 ) 0 0 14 3 9 #"world-dir"
 0 0 27 3 1 #" "
 0 0 14 3 10 #"INIT-WORLD"
 0 0 27 3 2 #"))"
+0 0 27 29 1 #"\n"
+0 0 27 3 82
+(50
+ #"                                                                    "
+ #"             ("
+) 0 0 14 3 8 #"move-los"
+0 0 27 3 2 #" ("
+0 0 14 3 11 #"world-shots"
+0 0 27 3 1 #" "
+0 0 14 3 10 #"INIT-WORLD"
+0 0 27 3 3 #")))"
 0 0 27 29 1 #"\n"
 0 0 27 3 63
 #"                                                              ("
@@ -16875,6 +17077,8 @@
 0 0 27 3 43 #"                                          ("
 0 0 14 3 18 #"new-dir-after-tick"
 0 0 27 3 2 #" ("
+0 0 14 3 17 #"remove-hit-aliens"
+0 0 27 3 2 #" ("
 0 0 14 3 8 #"move-loa"
 0 0 27 3 2 #" ("
 0 0 14 3 12 #"world-aliens"
@@ -16882,10 +17086,17 @@
 0 0 14 3 11 #"INIT-WORLD2"
 0 0 27 3 1 #")"
 0 0 27 29 1 #"\n"
-0 0 27 3 73 49 0 0 14 3 9 #"world-dir"
+0 0 27 3 92 49 0 0 14 3 9 #"world-dir"
 0 0 27 3 1 #" "
 0 0 14 3 11 #"INIT-WORLD2"
 0 0 27 3 2 #"))"
+0 0 27 29 1 #"\n"
+0 0 27 3 82 50 0 0 14 3 8 #"move-los"
+0 0 27 3 2 #" ("
+0 0 14 3 11 #"world-shots"
+0 0 27 3 1 #" "
+0 0 14 3 11 #"INIT-WORLD2"
+0 0 27 3 3 #")))"
 0 0 27 29 1 #"\n"
 0 0 27 3 63
 #"                                                              ("
@@ -17344,12 +17555,10 @@
 0 0 27 3 1 #" "
 0 0 14 3 5 #"a-loa"
 0 0 27 3 3 #") ("
-0 0 14 3 3 #"not"
-0 0 27 3 2 #" ("
-0 0 14 3 6 #"empty?"
+0 0 14 3 5 #"cons?"
 0 0 27 3 1 #" "
 0 0 14 3 5 #"a-loa"
-0 0 27 3 3 #")))"
+0 0 27 3 2 #"))"
 0 0 27 29 1 #"\n"
 0 0 27 3 4 #"    "
 0 0 27 29 1 #"\n"
@@ -17361,24 +17570,20 @@
 0 0 27 3 1 #" "
 0 0 14 3 13 #"NOT-ALIVE-VAL"
 0 0 27 3 2 #" ("
-0 0 14 3 3 #"not"
-0 0 27 3 2 #" ("
-0 0 14 3 6 #"empty?"
+0 0 14 3 5 #"cons?"
 0 0 27 3 1 #" "
 0 0 14 3 5 #"E-LOA"
-0 0 27 3 3 #")))"
+0 0 27 3 2 #"))"
 0 0 27 29 1 #"\n"
 0 0 27 3 6 #"     ("
 0 0 16 3 6 #"define"
 0 0 27 3 1 #" "
 0 0 14 3 9 #"ALIVE-VAL"
 0 0 27 3 6 #"     ("
-0 0 14 3 3 #"not"
-0 0 27 3 2 #" ("
-0 0 14 3 6 #"empty?"
+0 0 14 3 5 #"cons?"
 0 0 27 3 1 #" "
 0 0 14 3 8 #"INIT-LOA"
-0 0 27 3 3 #")))"
+0 0 27 3 2 #"))"
 0 0 27 29 1 #"\n"
 0 0 27 29 1 #"\n"
 0 0 27 3 5 #"     "
@@ -17774,7 +17979,7 @@
 0 0 27 3 2 #" ("
 0 0 14 3 12 #"world-aliens"
 0 0 27 3 1 #" "
-0 0 14 3 6 #"WORLD3"
+0 0 14 3 6 #"WORLD4"
 0 0 27 3 2 #"))"
 0 0 27 29 1 #"\n"
 0 0 27 3 28 #"                           ("
@@ -17784,7 +17989,7 @@
 0 0 27 3 2 #" ("
 0 0 14 3 12 #"world-aliens"
 0 0 27 3 1 #" "
-0 0 14 3 6 #"WORLD3"
+0 0 14 3 6 #"WORLD4"
 0 0 27 3 5 #")))))"
 0 0 27 29 1 #"\n"
 0 0 27 3 3 #"   "
@@ -17835,7 +18040,7 @@
 0 0 27 3 2 #" ("
 0 0 14 3 10 #"game-over?"
 0 0 27 3 1 #" "
-0 0 14 3 6 #"WORLD3"
+0 0 14 3 6 #"WORLD4"
 0 0 27 3 7 #")      "
 0 0 14 3 10 #"GAME-OVER2"
 0 0 27 3 1 #")"
@@ -18061,7 +18266,7 @@
 0 0 14 3 6 #"format"
 0 0 27 3 1 #" "
 0 0 20 3 73
-(50
+(51
  #"\"draw-last-world: Given world has ~s aliens and none have reached e"
  #"arth.\""
 ) 0 0 27 29 1 #"\n"
@@ -18315,6 +18520,98 @@
 0 0 18 3 48 #";; Tests using sample values for draw-last-world"
 0 0 27 29 1 #"\n"
 0 0 27 3 6 #"     ("
+0 0 14 3 12 #"check-expect"
+0 0 27 3 2 #" ("
+0 0 14 3 15 #"draw-last-world"
+0 0 27 3 2 #" ("
+0 0 14 3 10 #"make-world"
+0 0 27 3 1 #" "
+0 0 23 3 2 #"10"
+0 0 27 3 1 #" "
+0 0 23 3 1 #"'"
+0 0 27 3 3 #"() "
+0 0 23 3 1 #"'"
+0 0 14 3 4 #"left"
+0 0 27 3 1 #" "
+0 0 23 3 1 #"'"
+0 0 27 3 4 #"()))"
+0 0 27 29 1 #"\n"
+0 0 27 3 19 #"                   "
+0 6           4 23 4622
+(52
+ #"(#(struct:crop (#(struct:point 0 0) #(struct:point 600 0) #(struct:p"
+ #"oint 600 450) #(struct:point 0 450)) #(struct:translate 0 0 #(struct"
+ #":overlay #(struct:translate 122.5 92.0 #(struct:overlay #(struct:tra"
+ #"nslate 0 0 #(struct:overlay #(struct:translate 0 0 #(struct:overlay "
+ #"#(struct:translate 0 0 #(struct:overlay #(struct:translate 0 0 #(str"
+ #"uct:overlay #(struct:translate 0 0 #(struct:overlay #(struct:transla"
+ #"te 0 0 #(struct:overlay #(struct:translate 0 0 #(struct:overlay #(st"
+ #"ruct:translate 0 0 #(struct:overlay #(struct:translate 0 0 #(struct:"
+ #"overlay #(struct:translate 0 0 #(struct:overlay #(struct:translate 0"
+ #" 0 #(struct:overlay #(struct:translate 0 0 #(struct:overlay #(struct"
+ #":translate 0 0 #(struct:overlay #(struct:translate 0 0 #(struct:over"
+ #"lay #(struct:translate 0 0 #(struct:translate 12.0 20.5 #(struct:tex"
+ #"t \"E\" 0 1 \"green\" 36 #f swiss normal normal #f))) #(struct:trans"
+ #"late 24.0 0.0 #(struct:translate "
+ #"11.5 20.5 #(struct:text \"A\" 0 1 \"green\" 36 #f swiss normal norma"
+ #"l #f))))) #(struct:translate 47.0 0.0 #(struct:translate 13.0 20.5 #"
+ #"(struct:text \"R\" 0 1 \"green\" 36 #f swiss normal normal #f))))) #"
+ #"(struct:translate 73.0 0.0 #(struct:translate 10.5 20.5 #(struct:tex"
+ #"t \"T\" 0 1 \"green\" 36 #f swiss normal normal #f))))) #(struct:tra"
+ #"nslate 94.0 0.0 #(struct:translate 13.0 20.5 #(struct:text \"H\" 0 1"
+ #" \"green\" 36 #f swiss normal normal #f))))) #(struct:translate 120."
+ #"0 0.0 #(struct:translate 5.0 20.5 #(struct:text \" \" 0 1 \"green\" "
+ #"36 #f swiss normal normal #f))))) #(struct:translate 130.0 0.0 #(str"
+ #"uct:translate 18.0 20.5 #(struct:text \"W\" 0 1 \"green\" 36 #f swis"
+ #"s normal normal #f))))) #(struct:translate 166.0 0.0 #(struct:transl"
+ #"ate 11.5 20.5 #(struct:text \"A\" 0 1 \"green\" 36 #f swiss normal n"
+ #"ormal #f))))) #(struct:translate 189.0 0.0 #(struct:translate 12.0 2"
+ #"0.5 #(struct:text \"S\" 0 1 \"green\" 36 #f swiss normal normal #f))"
+ #"))) #(struct:translate 213.0 0.0 #(struct:translate 5.0 20.5 #(struc"
+ #"t:text \" \" 0 1 \"green\" 36 #f swiss normal normal #f))))) #(struc"
+ #"t:translate 223.0 0.0 #(struct:translate 12.0 20.5 #(struct:text \"S"
+ #"\" 0 1 \"green\" 36 #f swiss normal normal #f))))) #(struct:translat"
+ #"e 247.0 0.0 #(struct:translate 11.5 20.5 #(struct:text \"A\" 0 1 \"g"
+ #"reen\" 36 #f swiss normal normal #f))))) #(struct:translate 270.0 0."
+ #"0 #(struct:translate 12.0 20.5 #(struct:text \"V\" 0 1 \"green\" 36 "
+ #"#f swiss normal normal #f))))) #(struct:translate 294.0 0.0 #(struct"
+ #":translate 12.0 20.5 #(struct:text \"E\" 0 1 \"green\" 36 #f swiss n"
+ #"ormal normal #f))))) #(struct:translate 318.0 0.0 #(struct:translate"
+ #" 13.0 20.5 #(struct:text \"D\" 0 1 \"green\" 36 #f swiss normal norm"
+ #"al #f))))) #(struct:translate 344.0 0.0 #(struct:translate 5.5 20.5 "
+ #"#(struct:text \"!\" 0 1 \"green\" 36 #f swiss normal normal #f))))) "
+ #"#(struct:translate 0 0 #(struct:crop (#(struct:point 0 0) #(struct:p"
+ #"oint 600 0) #(struct:point 600 450) #(struct:point 0 450)) #(struct:"
+ #"translate 0 0 #(struct:overlay #(struct:translate 305.0 420.66987298"
+ #"10778 #(struct:crop (#(struct:point 0 0) #(struct:point 20.0 0) #(st"
+ #"ruct:point 20.0 28.66025403784439) #(struct:point 0 28.6602540378443"
+ #"9)) #(struct:overlay #(struct:polygon (#(struct:pulled-point 0 0 0 6"
+ #"67/40 0 0) #(struct:pulled-point 0 0 20 667/40 0 0) #(struct:pulled-"
+ #"point 0 0 20 957/40 0 0) #(struct:pulled-point 0 0 0 957/40 0 0)) 25"
+ #"5 \"red\") #(struct:crop (#(struct:point 0 0) #(struct:point 20.0 0)"
+ #" #(struct:point 20.0 28.66025403784439) #(struct:point 0 28.66025403"
+ #"784439)) #(struct:overlay #(struct:overlay #(struct:overlay #(struct"
+ #":translate 10 5 #(struct:ellipse 3 10 0 255 \"darkgray\")) #(struct:"
+ #"translate 10 10 #(struct:ellipse 20 20 0 255 \"green\"))) #(struct:p"
+ #"olygon (#(struct:pulled-point 0 0 10.0 20.0 0 0) #(struct:pulled-poi"
+ #"nt 0 0 0.0 20.0 0 0) #(struct:pulled-point 0 0 4.999999999999998 28."
+ #"66025403784439 0 0)) 255 \"red\")) #(struct:polygon (#(struct:pulled"
+ #"-point 0 0 20.0 20.0 0 0) #(struct:pulled-point 0 0 10.0 20.0 0 0) #"
+ #"(struct:pulled-point 0 0 14.999999999999998 28.66025403784439 0 0)) "
+ #"255 \"red\")))))) #(struct:translate 0 0 #(struct:crop (#(struct:poi"
+ #"nt 0 0) #(struct:point 600 0) #(struct:point 600 450) #(struct:point"
+ #" 0 450)) #(struct:translate 0 0 #(struct:overlay #(struct:translate "
+ #"0 0 #(struct:translate 0 0 #(struct:polygon (#(struct:pulled-point 0"
+ #" 0 0 0 0 0) #(struct:pulled-point 0 0 600 0 0 0) #(struct:pulled-poi"
+ #"nt 0 0 600 450 0 0) #(struct:pulled-point 0 0 0 450 0 0)) outline #("
+ #"struct:pen \"black\" 2 solid round round)))) #(struct:translate 0 0 "
+ #"#(struct:translate 0 0 #(struct:polygon (#(struct:pulled-point 0 0 0"
+ #" 0 0 0) #(struct:pulled-point 0 0 600 0 0 0) #(struct:pulled-point 0"
+ #" 0 600 450 0 0) #(struct:pulled-point 0 0 0 450 0 0)) 255 \"pink\"))"
+ #")))))))))))) #(struct:bb 600 450 450.0) #f)"
+) 0 0 27 3 2 #" )"
+0 0 27 29 1 #"\n"
+0 0 27 3 6 #"     ("
 0 0 14 3 11 #"check-error"
 0 0 27 3 2 #" ("
 0 0 14 3 15 #"draw-last-world"
@@ -18351,7 +18648,7 @@
 0 0 27 29 1 #"\n"
 0 0 27 3 18 #"                  "
 0 0 20 3 72
-(51
+(53
  #"\"draw-last-world: Given world has 2 aliens and none have reached ea"
  #"rth.\""
 ) 0 0 27 3 1 #")"
