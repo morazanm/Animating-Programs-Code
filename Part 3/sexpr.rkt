@@ -93,8 +93,7 @@ A function is either: '+, '-, '*
 
 ;; Sample instances of sexpr
 (define SEXPR1 67)
-(define SEXPR2 SLIST1)
-(define SEXPR3 SLIST2)
+(define SEXPR2 SLIST2)
 
 ;; Sample instances of (listof sexpr)
 (define LOSEXPR1 '())
@@ -214,11 +213,11 @@ A function is either: '+, '-, '*
 
 ;; Sample expressions for eval-sexpr
 (define SEXPR1-VAL SEXPR1)
-(define SEXPR3-VAL (eval-slist SEXPR3))
+(define SEXPR2-VAL (eval-slist SEXPR2))
 
 ;; Tests using sample computations for eval-sexpr
 (check-expect (eval-sexpr SEXPR1) SEXPR1-VAL)
-(check-expect (eval-sexpr SEXPR3) SEXPR3-VAL)
+(check-expect (eval-sexpr SEXPR2) SEXPR2-VAL)
 
 ;; Tests using sample values for eval-sexpr
 (check-expect (eval-sexpr 42) 42)
