@@ -1,6 +1,6 @@
 ;; The first three lines of this file were inserted by DrRacket. They record metadata
 ;; about the language level of this file in a form that our tools can easily process.
-#reader(lib "htdp-intermediate-lambda-reader.ss" "lang")((modname aliens-attack-server) (read-case-sensitive #t) (teachpacks ((lib "image.rkt" "teachpack" "2htdp") (lib "universe.rkt" "teachpack" "2htdp"))) (htdp-settings #(#t constructor repeating-decimal #f #t none #f ((lib "image.rkt" "teachpack" "2htdp") (lib "universe.rkt" "teachpack" "2htdp")) #f)))
+#reader(lib "htdp-advanced-reader.ss" "lang")((modname aliens-attack-server) (read-case-sensitive #t) (teachpacks ((lib "image.rkt" "teachpack" "2htdp") (lib "universe.rkt" "teachpack" "2htdp"))) (htdp-settings #(#t constructor repeating-decimal #t #t none #f ((lib "image.rkt" "teachpack" "2htdp") (lib "universe.rkt" "teachpack" "2htdp")) #f)))
 
 (define MAX-CHARS-HORIZONTAL 20)
 (define AN-IMG-X (/ MAX-CHARS-HORIZONTAL 2))
@@ -28,26 +28,27 @@
 (define INIT-WORLD (make-world '() INIT-LOA 'right '()))
 
 
-;; A universe is a (listof iworld)
+;; A universe is a (listof iworld), where each iworld has a unique name
 
-;; Samlple universe
+;; Sample instances of universe
 (define INIT-UNIV '())
 (define A-UNIV    (list iworld1 iworld2))
 
 
 ;; MESSAGE DATA DEFINITIONS
-;; A marshaled ally  (mr) is (list image-x string)
+;; A marshaled moved ally  (am) is (list image-x string)
+;; A marshaled list of allies (mlor) is a (listof am)
 ;; A marshaled alien (ma) is (list image-x image-y)
 ;; A marshaled list of aliens (mloa) is a (listof ma)
 ;; A marshaled shot  (ms) is either:
 ;;  1. 'NO-SHOT
 ;;  2. (list image-x image-y)
+;; A marshaled list of shots (mlos) is a (listof ms)
 ;; A marshaled world (mw) is
 ;;   (list   (listof mr)
 ;;           (listof ma)
 ;;           direction
 ;;           (listof ms)
-;; A marshaled list of shots (mlos) is a (listof ms)
 (define MR1  '(10 "iworld1"))
 (define MR2  '(8  "iworld3"))
 (define MA   '(14  3))
@@ -60,13 +61,6 @@
                left
                ((8 5) (7 2))))
 
-;; A to-player message (tpm) is either
-;;  1. (cons 'start mloa)
-;;  2. (list 'rckt-move  mr)
-;;  3. (list 'new-shot   ms)
-;;  4. (list 'new-ally   mr)
-;;  5. (list 'rm-ally    string)
-;;  6. (list 'send-world string)
 (define ST-MSG (cons 'start MLOA))
 (define RM-MSG (list 'rckt-move MR2))
 (define NS-MSG (list 'new-shot  MS1))
@@ -75,9 +69,41 @@
 (define SW-MSG (list 'send-world "world2"))
 
 ;; A to-server message (tsm) is either
-;;  1. (list 'rckt-move mr)
+;;  1. (list 'rckt-move ma)
 ;;  2. (list 'new-shot  ms)
 ;;  3. (cons 'world-back (cons string mw))
+;;
+  #| TEMPLATE FOR FUNCTIONS ON A tsm
+     ;; Sample instances of tsm
+     (define TSM1 ...)
+     (define TSM2 ...)
+     (define TSM3 ...) ...
+     ;; Sample expressions for f-on-tsm
+     (define TSM1-VAL ...)
+     (define TSM2-VAL ...)
+     (define TSM3-VAL ...) ...
+     ;; tsm ... --> ...
+     ;; Purpose:
+     (define (f-on-tsm a-tsm ...)
+       (local [(define tag (first a-tsm))]
+         (cond [(eq? tag 'rckt-move)  ...]
+               [(eq? tag 'new-shot)    ...]
+               [(eq? tag 'world-back) ...]
+                [else (error (format "Unknown to-server message type: ~s"
+                             tag))])))
+     ;; Sample expressions for f-on-tsm
+     (define TSM1-VAL ...)
+     (define TSM2-VAL ...)
+     (define TSM3-VAL ...) ...
+     ;; Tests using sample computations for f-on-tsm
+     (check-expect (f-on-tsm TSM1 ...) TSM1-VAL)
+     (check-expect (f-on-tsm TSM2 ...) TSM2-VAL)
+     (check-expect (f-on-tsm TSM3 ...) TSM3-VAL) ...
+     ;; Tests using sample values for f-on-tsm
+     (check-expect (f-on-tsm ... ...) ...) ...
+  |#
+
+;; Sample instances of tsm
 (define SRM-MSG RM-MSG)
 (define SNS-MSG NS-MSG)
 (define SWB-MSG (cons 'world-back (cons "iworld2" MW)))
@@ -243,9 +269,10 @@
 
 ;; universe iworld --> universe or bundle
 ;; Purpose: Add new world to the universe
-(define (add-ally a-univ an-iw)
+(define (add-player a-univ an-iw)
   (cond
-    [(member? (iworld-name an-iw) (map iworld-name a-univ)) a-univ]
+    [(member? (iworld-name an-iw) (map iworld-name a-univ))
+     (make-bundle a-univ '() (list an-iw))]
     [(empty? a-univ)
      (make-bundle
       (cons an-iw a-univ)
@@ -262,8 +289,8 @@
              a-univ))
       '())]))
 
-;; Sample expressions for add-ally
-(define RPT-ADD A-UNIV)
+;; Sample expressions for add-player
+(define RPT-ADD (make-bundle A-UNIV '() (list iworld1)))
 (define EMP-ADD (make-bundle
                  (cons iworld1 INIT-UNIV)
                  (list (make-mail iworld1
@@ -283,13 +310,13 @@
                         A-UNIV))
                  '()))
 
-;; Tests using sample computations for add-ally
-(check-expect (add-ally A-UNIV    iworld1) RPT-ADD)
-(check-expect (add-ally INIT-UNIV iworld1) EMP-ADD)
-(check-expect (add-ally A-UNIV    iworld3) NEW-ADD)
+;; Tests using sample computations for add-player
+(check-expect (add-player A-UNIV    iworld1) RPT-ADD)
+(check-expect (add-player INIT-UNIV iworld1) EMP-ADD)
+(check-expect (add-player A-UNIV    iworld3) NEW-ADD)
 
-;; Tests using sample values for add-ally
-(check-expect (add-ally (list iworld2 iworld3) iworld1)
+;; Tests using sample values for add-player
+(check-expect (add-player (list iworld2 iworld3) iworld1)
               (make-bundle   (list iworld1 iworld2 iworld3)
                              (cons (make-mail
                                     (first (list iworld2 iworld3))
@@ -306,7 +333,7 @@
 
 ;; universe iworld --> universe or bundle
 ;; Purpose: Add new world to the universe
-(define (rm-ally a-univ an-iw)
+(define (rm-player a-univ an-iw)
   (local
     [(define new-univ (filter (λ (iw)
                                 (not (string=? (iworld-name iw)
@@ -320,7 +347,7 @@
           new-univ)
      '())))
 
-;; Sample expressions for rm-ally
+;; Sample expressions for rm-player
 (define IW1-RM (local
                  [(define new-univ (filter (λ (iw)
                                              (not (string=? (iworld-name iw)
@@ -335,11 +362,11 @@
                   '())))
 
 
-;; Tests using sample computations for rm-ally
-(check-expect (rm-ally A-UNIV iworld1) IW1-RM)
+;; Tests using sample computations for rm-player
+(check-expect (rm-player A-UNIV iworld1) IW1-RM)
 
-;; Tests using sample values for rm-ally
-(check-expect (rm-ally (list iworld1 iworld2 iworld3) iworld2)
+;; Tests using sample values for rm-player
+(check-expect (rm-player (list iworld1 iworld2 iworld3) iworld2)
               (make-bundle   (list iworld1 iworld3)
                              (map
                               (λ (iw)
@@ -353,7 +380,7 @@
 ;; Purpose: Run the chat server
 (define (run-server a-z)
   (universe INIT-UNIV
-            (on-new add-ally)
+            (on-new add-player)
             (on-msg process-message)
-            (on-disconnect rm-ally)))
+            (on-disconnect rm-player)))
 
