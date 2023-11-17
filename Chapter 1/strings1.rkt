@@ -10,3 +10,4 @@
 (check-expect (substring CAT 2 3) "t")
 (check-expect (substring CAT 3 3) "")
 (check-expect (substring CAT 0) CAT)
+(check-expect (substring CAT 2) "t")
